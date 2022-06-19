@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'themis-kore'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_4F2797EDA8454DD89A00F64BF1074975 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_123BDE3A140E42B0BD0ED947E771A044 }}
           package: .
