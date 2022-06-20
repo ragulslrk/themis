@@ -22,7 +22,7 @@ const db_uri="mongodb+srv://ragulNolan:%23Ragul4444@cluster0.6qh9t.mongodb.net/t
 
 mongoose.connect( db_uri,{useNewUrlParser: true,useUnifiedTopology: true})
     .then((res)=>{
-        app.listen(process.env.port,()=>{
+        app.listen(3232,()=>{
         console.log("listening themis")
     })
   
