@@ -17,10 +17,12 @@ app.use(express.static('views'))
 app.use(express.static('assets'))
 
 
-//mongo db connection 
-const db_uri="mongodb+srv://ragulNolan:%23Ragul4444@cluster0.6qh9t.mongodb.net/themis?retryWrites=true&w=majority"
 
-mongoose.connect( db_uri,{useNewUrlParser: true,useUnifiedTopology: true})
+
+//mongo db connection 
+
+
+mongoose.connect( process.env.db,{useNewUrlParser: true,useUnifiedTopology: true})
     .then((res)=>{
         app.listen(3232,()=>{
         console.log("listening themis")
